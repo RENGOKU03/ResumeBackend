@@ -13,7 +13,7 @@ export interface ApiUserResumeUserResume extends Struct.CollectionTypeSchema {
   };
   attributes: {
     title: Schema.Attribute.String & Schema.Attribute.Required;
-    reusumeId: Schema.Attribute.String & Schema.Attribute.Required;
+    reusumeId: Schema.Attribute.String;
     userEmail: Schema.Attribute.Email;
     userName: Schema.Attribute.String;
     firstName: Schema.Attribute.String;
@@ -22,10 +22,11 @@ export interface ApiUserResumeUserResume extends Struct.CollectionTypeSchema {
     jobTitle: Schema.Attribute.String;
     phone: Schema.Attribute.String;
     email: Schema.Attribute.String;
-    summery: Schema.Attribute.String;
+    summery: Schema.Attribute.Text;
+    Experience: Schema.Attribute.Component<'experience.experience', true>;
     education: Schema.Attribute.Component<'education.education', true>;
-    experience: Schema.Attribute.Component<'experience.experience', true>;
     skills: Schema.Attribute.Component<'skills.skills', true>;
+    themeColor: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#ff6666'>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
