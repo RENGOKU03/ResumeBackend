@@ -17,6 +17,7 @@ export interface ExperienceExperience extends Struct.ComponentSchema {
   info: {
     displayName: 'Experience';
     icon: 'folder';
+    description: '';
   };
   attributes: {
     title: Schema.Attribute.String;
@@ -25,7 +26,7 @@ export interface ExperienceExperience extends Struct.ComponentSchema {
     state: Schema.Attribute.String;
     startDate: Schema.Attribute.String;
     endDate: Schema.Attribute.String;
-    workSummery: Schema.Attribute.Blocks;
+    workSummery: Schema.Attribute.RichText;
   };
 }
 

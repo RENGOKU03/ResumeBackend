@@ -16,9 +16,8 @@
       "type": "string",
       "required": true
     },
-    "reusumeId": {
-      "type": "string",
-      "required": false
+    "resumeId": {
+      "type": "string"
     },
     "userEmail": {
       "type": "email"

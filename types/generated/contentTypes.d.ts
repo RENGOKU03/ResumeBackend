@@ -13,7 +13,7 @@ export interface ApiUserResumeUserResume extends Struct.CollectionTypeSchema {
   };
   attributes: {
     title: Schema.Attribute.String & Schema.Attribute.Required;
-    reusumeId: Schema.Attribute.String;
+    resumeId: Schema.Attribute.String;
     userEmail: Schema.Attribute.Email;
     userName: Schema.Attribute.String;
     firstName: Schema.Attribute.String;
