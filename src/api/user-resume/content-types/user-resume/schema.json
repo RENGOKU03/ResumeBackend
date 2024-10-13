@@ -64,6 +64,23 @@
     "themeColor": {
       "type": "string",
       "default": "#ff6666"
+    },
+    "resumeStyle": {
+      "type": "string"
+    },
+    "profilePicture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "resumeRefresh": {
+      "type": "biginteger"
     }
   }
 }
